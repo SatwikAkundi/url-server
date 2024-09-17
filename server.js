@@ -15,7 +15,7 @@ mongoose.connect(
 
 //use cors to allow cross origin resource sharing
 app.use(cors({
-  origin: ['http://localhost:3000','http://localhost:5001'], // or your frontend's URL
+  origin: "*", // or your frontend's URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type'],
   credentials: true
